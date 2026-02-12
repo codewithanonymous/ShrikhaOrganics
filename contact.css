@@ -1,0 +1,263 @@
+/* 
+========================================
+   CONTACT US SECTION - STANDALONE STYLES
+========================================
+*/
+
+.contact-section {
+    min-height: 40vh;
+    padding: 3rem 8vw;
+    background: linear-gradient(180deg, #1A2E22 0%, #243428 50%, #1A2E22 100%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    clear: both;
+}
+
+.contact-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+}
+
+.contact-header {
+    margin-bottom: 3rem;
+}
+
+.contact-title {
+    font-family: 'Cormorant Garamond', serif;
+    font-style: italic;
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    /* Slightly larger */
+    color: #F9F5F0;
+    margin-bottom: 1rem;
+    letter-spacing: -0.01em;
+    background: linear-gradient(135deg, #F9F5F0 0%, var(--color-gold) 50%, #F9F5F0 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.contact-subtitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1rem;
+    color: rgba(249, 245, 240, 0.8);
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    margin-bottom: 0;
+}
+
+.contact-links {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contact-link {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    color: #F9F5F0;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    padding: 2rem 1.5rem;
+    border-radius: 20px;
+    background: rgba(249, 245, 240, 0.1);
+    border: 1px solid rgba(249, 245, 240, 0.2);
+    min-width: 120px;
+    min-height: 120px;
+    position: relative;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+
+.contact-link:hover {
+    transform: translateY(-5px) scale(1.05);
+    background: rgba(249, 245, 240, 0.15);
+    border-color: rgba(249, 245, 240, 0.3);
+    color: #F9F5F0;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.contact-link:active {
+    transform: translateY(-2px) scale(1.02);
+}
+
+.contact-icon {
+    width: 64px;
+    height: 64px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 1rem;
+    transition: all 0.4s var(--easing-golden);
+    background: rgba(179, 139, 63, 0.1);
+    /* Subtle gold background */
+    border-radius: 50%;
+    /* Circle for more elegance */
+    padding: 1.2rem;
+    border: 1px solid rgba(179, 139, 63, 0.3);
+    color: var(--color-gold);
+    /* Gold icons */
+}
+
+.contact-link:hover .contact-icon {
+    transform: translateY(-5px) scale(1.1);
+    background: rgba(179, 139, 63, 0.2);
+    border-color: var(--color-gold);
+    box-shadow: 0 0 20px rgba(179, 139, 63, 0.3);
+}
+
+.contact-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: currentColor;
+}
+
+.contact-label {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    color: #F9F5F0;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+    text-align: center;
+    line-height: 1.2;
+}
+
+.contact-link:hover .contact-label {
+    opacity: 1;
+    transform: translateY(-1px);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .contact-section {
+        padding: 1.5rem 1rem;
+        min-height: 25vh;
+    }
+
+    .contact-header {
+        margin-bottom: 1.5rem;
+    }
+
+    .contact-title {
+        font-size: 2rem;
+        margin-bottom: 0.5rem;
+    }
+
+    .contact-subtitle {
+        font-size: 0.9rem;
+    }
+
+    .contact-links {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 0.8rem;
+        max-width: 100%;
+        padding: 0 1rem;
+    }
+
+    .contact-link {
+        min-width: 70px;
+        min-height: 70px;
+        padding: 0.8rem 0.5rem;
+        border-radius: 12px;
+        flex: 1;
+        max-width: 80px;
+    }
+
+    .contact-icon {
+        width: 36px;
+        height: 36px;
+        margin-bottom: 0.4rem;
+        padding: 0.4rem;
+        border-radius: 8px;
+    }
+
+    .contact-label {
+        font-size: 0.7rem;
+        letter-spacing: 0.04em;
+        line-height: 1.1;
+    }
+}
+
+/* Tablet Responsive */
+@media (min-width: 769px) and (max-width: 1024px) {
+    .contact-section {
+        padding: 2.5rem 2rem;
+        min-height: 38vh;
+    }
+
+    .contact-links {
+        grid-template-columns: repeat(4, 1fr);
+        gap: 1.5rem;
+        max-width: 500px;
+    }
+
+    .contact-link {
+        min-width: 110px;
+        min-height: 110px;
+        padding: 1.8rem 1.2rem;
+        border-radius: 18px;
+    }
+
+    .contact-icon {
+        width: 58px;
+        height: 58px;
+        margin-bottom: 0.9rem;
+        padding: 0.9rem;
+        border-radius: 14px;
+    }
+}
+
+/* Mobile Specific Hover Effects */
+@media (max-width: 768px) {
+    .contact-link:hover {
+        transform: translateY(-2px) scale(1.05);
+        background: rgba(249, 245, 240, 0.15);
+        border-color: rgba(249, 245, 240, 0.3);
+        color: #F9F5F0;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+    }
+
+    .contact-link:active {
+        transform: translateY(-1px) scale(1.02);
+    }
+
+    .contact-link:hover .contact-icon {
+        transform: translateY(-1px);
+        background: rgba(249, 245, 240, 0.25);
+        border-color: rgba(249, 245, 240, 0.3);
+    }
+}
+
+/* Touch device optimizations */
+@media (hover: none) and (pointer: coarse) {
+    .contact-link:hover {
+        transform: none;
+        background: rgba(249, 245, 240, 0.15);
+        border-color: rgba(249, 245, 240, 0.3);
+        color: #F9F5F0;
+    }
+
+    .contact-link:active {
+        transform: scale(1.02);
+        background: rgba(249, 245, 240, 0.2);
+        border-color: rgba(249, 245, 240, 0.4);
+        color: #F9F5F0;
+    }
+}
