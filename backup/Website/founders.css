@@ -1,0 +1,325 @@
+/* 
+========================================
+   FOUNDERS SECTION
+========================================
+*/
+
+.founders-section {
+    position: relative;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1A2E22 0%, #2A3E32 50%, #1A2E22 100%);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.founders-container {
+    width: 100%;
+    max-width: 1400px;
+    height: 100vh;
+    position: relative;
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    align-items: center;
+    gap: 0;
+    margin: 0 auto;
+    padding: 0 var(--spacing-container);
+}
+
+.founders-image-wrapper {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    border-radius: 0 48px 48px 0;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.4);
+}
+
+.founders-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center 25%;
+    opacity: 1;
+    transition: transform 0.8s ease;
+}
+
+.founders-content {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 2rem 2rem 4rem;
+}
+
+.founders-text-box {
+    background: rgba(26, 46, 34, 0.85);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(249, 245, 240, 0.15);
+    border-radius: 32px;
+    padding: 2rem 2.5rem;
+    max-width: 500px;
+    width: 100%;
+    box-shadow:
+        0 25px 50px rgba(0, 0, 0, 0.3),
+        inset 0 1px 0 rgba(249, 245, 240, 0.1);
+    transform: translateX(0);
+    transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.founders-title {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-weight: 600;
+    font-size: clamp(2rem, 3.5vw, 2.8rem);
+    line-height: 1.1;
+    color: #F9F5F0;
+    margin-bottom: 0.8rem;
+    letter-spacing: -0.02em;
+}
+
+.founders-subtitle {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 0.95rem;
+    color: rgba(249, 245, 240, 0.8);
+    margin-bottom: 1.2rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+}
+
+.founders-description {
+    font-family: var(--font-sans);
+    font-weight: 300;
+    font-size: 0.95rem;
+    line-height: 1.6;
+    color: #F9F5F0;
+    margin-bottom: 1.5rem;
+    opacity: 0.95;
+}
+
+.founders-signature {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    margin-top: 1rem;
+}
+
+.signature-line {
+    flex: 0 0 60px;
+    height: 2px;
+    background: linear-gradient(90deg, #B38B3F, rgba(179, 139, 63, 0.3));
+    border-radius: 1px;
+}
+
+.signature-text {
+    font-family: var(--font-serif);
+    font-style: italic;
+    font-size: 0.95rem;
+    color: rgba(249, 245, 240, 0.7);
+    letter-spacing: 0.05em;
+}
+
+/* Hover Effects */
+.founders-section:hover .founders-image {
+    transform: scale(1.05);
+}
+
+.founders-section:hover .founders-text-box {
+    transform: translateX(-20px);
+    background: rgba(26, 46, 34, 0.95);
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .founders-section {
+        min-height: 100vh;
+        height: auto;
+        position: relative;
+        top: auto;
+        z-index: 40;
+        overflow: visible;
+        padding: 0;
+        background: linear-gradient(180deg, #1A2E22 0%, #243428 50%, #1A2E22 100%);
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 2rem;
+    }
+
+    .founders-container {
+        height: auto;
+        min-height: 100vh;
+        position: relative;
+        grid-template-columns: 1fr;
+        gap: 0;
+        padding: 4rem 1.5rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        overflow: visible;
+    }
+
+    .founders-image-wrapper {
+        height: 50vh;
+        width: 100%;
+        max-width: 400px;
+        border-radius: 24px;
+        order: 1;
+        position: relative;
+        overflow: hidden;
+        box-shadow:
+            0 20px 40px rgba(0, 0, 0, 0.3),
+            0 0 0 1px rgba(249, 245, 240, 0.1);
+        transform: perspective(1000px) rotateX(5deg);
+        transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
+        margin: 0 auto 1.5rem auto;
+    }
+
+    .founders-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: center 20%;
+        transition: transform 0.8s ease;
+        filter: contrast(1.05) saturate(1.1);
+    }
+
+    .founders-content {
+        position: relative;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        order: 2;
+        align-items: flex-start;
+        z-index: 10;
+        display: flex;
+        justify-content: center;
+        flex: 1;
+        padding-top: 1rem;
+    }
+
+    .founders-text-box {
+        background: linear-gradient(135deg,
+                rgba(26, 46, 34, 0.95) 0%,
+                rgba(36, 52, 40, 0.9) 50%,
+                rgba(26, 46, 34, 0.95) 100%);
+        backdrop-filter: blur(25px);
+        border: 1px solid rgba(249, 245, 240, 0.2);
+        border-radius: 28px;
+        padding: 2.5rem 2rem;
+        max-width: 100%;
+        width: 100%;
+        min-height: 250px;
+        transform: none;
+        text-align: center;
+        box-shadow:
+            0 25px 50px rgba(0, 0, 0, 0.4),
+            inset 0 1px 0 rgba(249, 245, 240, 0.15),
+            0 0 0 1px rgba(179, 139, 63, 0.1);
+        position: relative;
+        overflow: visible;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .founders-text-box::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 2px;
+        background: linear-gradient(90deg,
+                transparent 0%,
+                #B38B3F 20%,
+                #D4AF37 50%,
+                #B38B3F 80%,
+                transparent 100%);
+        opacity: 0.8;
+    }
+
+    .founders-title {
+        font-size: 1.8rem;
+        text-align: center;
+        margin-bottom: 0.8rem;
+        font-weight: 600;
+        letter-spacing: -0.01em;
+        background: linear-gradient(135deg, #F9F5F0 0%, #FFFFFF 50%, #F9F5F0 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .founders-subtitle {
+        font-size: 0.8rem;
+        text-align: center;
+        margin-bottom: 1rem;
+        letter-spacing: 0.15em;
+        color: rgba(249, 245, 240, 0.7);
+        text-transform: uppercase;
+        font-weight: 400;
+    }
+
+    .founders-description {
+        font-size: 0.9rem;
+        text-align: center;
+        line-height: 1.6;
+        margin-bottom: 1.2rem;
+        color: rgba(249, 245, 240, 0.85);
+        font-weight: 300;
+        letter-spacing: 0.02em;
+    }
+
+    .founders-signature {
+        flex-direction: column;
+        gap: 0.8rem;
+        text-align: center;
+        margin-top: 1rem;
+        position: relative;
+    }
+
+    .signature-line {
+        flex: 0 0 50px;
+        margin: 0 auto;
+        height: 1px;
+        background: linear-gradient(90deg,
+                transparent 0%,
+                #B38B3F 30%,
+                #D4AF37 50%,
+                #B38B3F 70%,
+                transparent 100%);
+        opacity: 0.6;
+    }
+
+    .signature-text {
+        font-size: 0.75rem;
+        color: rgba(249, 245, 240, 0.6);
+        font-style: italic;
+        letter-spacing: 0.05em;
+    }
+
+    /* Hover effects for touch devices */
+    .founders-section:active .founders-image-wrapper {
+        transform: perspective(1000px) rotateX(0deg) scale(1.02);
+    }
+
+    .founders-section:active .founders-image {
+        transform: scale(1.05);
+    }
+
+    .founders-section:active .founders-text-box {
+        transform: translateY(-3px);
+        box-shadow:
+            0 30px 60px rgba(0, 0, 0, 0.5),
+            inset 0 1px 0 rgba(249, 245, 240, 0.2),
+            0 0 0 1px rgba(179, 139, 63, 0.2);
+    }
+}
+
+/* Z-Index for stacking */
+#founders {
+    z-index: 40;
+}

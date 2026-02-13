@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shrikha Organics - Modern Heritage Wellness</title>
+    <link rel="icon" type="image/jpeg" href="/Website/assets/web%20Logo.jpeg">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=Montserrat:wght@300;400;500&display=swap"
+        rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/ScrollTrigger.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="contact.css">
+    <link rel="stylesheet" href="testimonials.css">
+    <link rel="stylesheet" href="founders.css">
+    <link rel="stylesheet" href="products.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Petemoss&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <header class="main-header">
+        <nav class="nav-container">
+            <div class="logo">SHRIKHA <span>ORGANICS</span></div>
+
+            <!-- Hamburger Menu Icon -->
+            <div class="hamburger-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="#hero">Home</a></li>
+                <li><a href="#products">Products</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#testimonials">Testimonials</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section sticky-section" id="hero">
+        <div class="hero-content">
+            <div class="hero-text-col">
+                <h1 class="hero-headline">Where<br> Purity<br> Meets<br> Quality.</h1>
+                <p class="hero-subheadline">Discover rare botanicals, ethically sourced and crafted for your inner balance.</p>
+                <a href="#products" class="btn-cta">Shop Now <span class="heart-icon">♡</span></a>
+            </div>
+            <div class="hero-image-col">
+                <div class="image-wrapper">
+                    <!-- The generated collage will be placed here -->
+                    <img src="/Website/assets/hero-collage.png" alt="Luxury Ayurvedic Jars with Botanicals" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <section class="about-section sticky-section" id="about">
+        <div class="about-container">
+            <div class="about-media">
+                <img class="about-logo" src="/Website/assets/web%20Logo.jpeg" alt="Shrikha Organics logo">
+            </div>
+            <div class="about-copy">
+                <h2 class="about-title">About Shrikha Organics</h2>
+                <p class="about-text">Shrikha Organics is a modern expression of timeless Ayurveda—crafted with rare
+                    botanicals, slow-made rituals, and an uncompromising devotion to purity. Every blend is ethically
+                    sourced and thoughtfully prepared to feel indulgent, calm, and undeniably refined.</p>
+                <p class="about-text">From sacred roots to precious resins, we select ingredients with intention and
+                    create formulations that honor heritage while embracing contemporary luxury.</p>
+                <div class="about-highlights">
+                    <div class="about-highlight">
+                        <div class="about-highlight-title">Ethically Sourced</div>
+                        <div class="about-highlight-text">Traceable botanicals and responsible partnerships.</div>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="about-highlight-title">Small Batch Craft</div>
+                        <div class="about-highlight-text">Fresh formulations prepared in limited runs.</div>
+                    </div>
+                    <div class="about-highlight">
+                        <div class="about-highlight-title">Ritual-First</div>
+                        <div class="about-highlight-text">A sensory experience designed for daily devotion.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="product-stack sticky-section" id="products">
+        <div class="product-stack-header">
+            <h2 class="product-stack-title">Handcrafted Wellness</h2>
+        </div>
+        <div class="product-grid" id="productsGrid">
+            <!-- Products will be loaded dynamically from the backend -->
+        </div>
+    </section>
+
+    <!-- Founders Section -->
+    <section class="founders-section sticky-section" id="founders">
+        <div class="founders-container">
+            <div class="founders-image-wrapper">
+                <img class="founders-image" src="/Website/assets/Founders image.jpeg" alt="The Founders of Shrikha Organics">
+            </div>
+            <div class="founders-content">
+                <div class="founders-text-box">
+                    <h2 class="founders-title">Our Visionaries</h2>
+                    <p class="founders-subtitle">The Heart of Shrikha Organics</p>
+                    <p class="founders-description">
+                        Mother & Daughter united by a shared vision to bring ancient Ayurvedic wisdom to modern
+                        wellness. Our founders blend traditional knowledge with contemporary science, creating
+                        formulations that honor nature's healing power while meeting today's lifestyle needs.
+                    </p>
+                    <div class="founders-signature">
+                        <span class="signature-line"></span>
+                        <span class="signature-text">Rooted in Tradition, Growing with Purpose</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="testimonials-container">
+            <div class="testimonials-header">
+                <h2 class="testimonials-title">Customer Reviews</h2>
+                <p class="testimonials-subtitle">Real experiences from our valued customers</p>
+            </div>
+
+            <div class="carousel-wrapper">
+                <div class="carousel-track">
+                    <!-- Original items -->
+                    <div class="testimonial-card" data-index="0">
+                        <div class="testimonial-image">
+                            <img src="/Website/assets/Review 1.jpeg" alt="Geetha Bhascker">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Geetha Bhascker</h3>
+                            <p class="testimonial-description">"With four decades in education and design, I value
+                                authenticity. This product isn't just wellness—it’s a beautifully crafted bridge between
+                                traditional wisdom and contemporary science. Truly impressive."</p>
+                            <button class="testimonial-btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-index="1">
+                        <div class="testimonial-image">
+                            <img src="/Website/assets/Rerview 2.jpeg" alt="Shrija Vaidya">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Shrija Vaidya</h3>
+                            <p class="testimonial-description">"Growing up with my mother’s Ayurvedic rituals, I saw
+                                firsthand the power of nature. My mission was to take those ancient secrets and refine
+                                them through the lens of modern science. Seeing our vision come to life in these
+                                formulations is my greatest pride. — Shrija Vaidya, Co-Founder"</p>
+                            <button class="testimonial-btn">Read More</button>
+                        </div>
+                    </div>
+
+                    <div class="testimonial-card" data-index="2">
+                        <div class="testimonial-image">
+                            <img src="/Website/assets/Review 3.jpeg" alt="Enna">
+                        </div>
+                        <div class="testimonial-content">
+                            <h3 class="testimonial-title">Enna</h3>
+                            <p class="testimonial-description">"Coming from Japan, I have very high standards for
+                                wellness products. Moving to Hyderabad opened my eyes to Ayurveda, but this
+                                Mother-Daughter duo perfected it. It’s pure, intentional, and fits my modern lifestyle
+                                perfectly. — Enna"</p>
+                            <button class="testimonial-btn">Read More</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us Section -->
+    <section class="contact-section" id="contact">
+        <div class="contact-container">
+            <div class="contact-header">
+                <h2 class="contact-title">Get in Touch</h2>
+                <p class="contact-subtitle">Connect with us for authentic wellness solutions</p>
+            </div>
+
+            <div class="contact-links">
+                <a href="https://instagram.com/shrikhaorganics" class="contact-link" target="_blank"
+                    rel="noopener noreferrer" aria-label="Follow us on Instagram">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zM5.838 12a6.162 6.162 0 1112.324 0 6.162 6.162 0 01-12.324 0zM12 16a4 4 0 110-8 4 4 0 010 8zm4.965-10.405a1.44 1.44 0 112.881.001 1.44 1.44 0 01-2.881-.001z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">Instagram</span>
+                </a>
+
+                <a href="mailto:info@shrikhaorganics.com" class="contact-link" aria-label="Email us">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">Email</span>
+                </a>
+
+                <a href="tel:+919876543210" class="contact-link" aria-label="Call us">
+                    <div class="contact-icon">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
+                            <path
+                                d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z" />
+                        </svg>
+                    </div>
+                    <span class="contact-label">Call</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <script src="/Website/script.js" defer></script>
+    <script src="/Website/carousel.js" defer></script>
+</body>
+
+</html>
